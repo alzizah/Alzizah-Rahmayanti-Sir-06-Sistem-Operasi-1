@@ -1,0 +1,437 @@
+# Latihan Sistem Bilangan: Penyelesaian dan Tutorial
+
+## 1. Latihan
+
+### 1a. Bilangan biner adalah bilangan yang berbasis …
+Bilangan biner adalah bilangan yang berbasis dua (2).
+
+### 1b. Bilangan heksadesimal adalah bilangan yang berbasis …
+Bilangan heksadesimal adalah bilangan yang berbasis enam belas (16).
+
+---
+
+## 2. Konversi Desimal ke Biner
+
+Metode: Pembagian dengan 2  
+Setiap bilangan desimal dibagi dengan 2 hingga hasilnya 0, dengan sisa dicatat dari bawah ke atas.
+
+### Contoh: 1234₁₀ ke biner
+
+| Pembagian | Hasil | Sisa |
+| --------- | ----- | ---- |
+| 1234 ÷ 2  | 617   | 0    |
+| 617 ÷ 2   | 308   | 1    |
+| 308 ÷ 2   | 154   | 0    |
+| 154 ÷ 2   | 77    | 0    |
+| 77 ÷ 2    | 38    | 1    |
+| 38 ÷ 2    | 19    | 0    |
+| 19 ÷ 2    | 9     | 1    |
+| 9 ÷ 2     | 4     | 1    |
+| 4 ÷ 2     | 2     | 0    |
+| 2 ÷ 2     | 1     | 0    |
+| 1 ÷ 2     | 0     | 1    |
+
+Hasil akhir (dari bawah ke atas): **10011010010₂**
+
+---
+
+## 3. Konversi Biner ke Desimal
+
+Metode: Perkalian dengan pangkat 2
+
+Contoh: 101101₂ ke desimal
+
+- 1 × 2⁵ = 32  
+- 0 × 2⁴ = 0  
+- 1 × 2³ = 8  
+- 1 × 2² = 4  
+- 0 × 2¹ = 0  
+- 1 × 2⁰ = 1  
+
+Jumlah: 32 + 0 + 8 + 4 + 0 + 1 = **45₁₀**
+
+---
+
+## 4. Konversi Biner ke Oktal
+
+Metode: Pemisahan setiap 3 digit dari kanan
+
+Contoh: 101011111001₂ ke oktal
+
+Pisahkan: 101 | 011 | 111 | 001  
+Konversi:  
+- 101₂ → 5₈  
+- 011₂ → 3₈  
+- 111₂ → 7₈  
+- 001₂ → 1₈  
+
+Hasil: **5371₈**
+
+---
+
+## 5. Konversi Oktal ke Biner
+
+Metode: Setiap digit oktal dikonversi ke 3 bit biner
+
+Contoh: 2170₈ ke biner
+
+- 2 → 010  
+- 1 → 001  
+- 7 → 111  
+- 0 → 000  
+
+Hasil: **010001111000₂**
+
+---
+
+## 6. Konversi Desimal ke Heksadesimal
+
+Metode: Pembagian dengan 16
+
+### a. 1780₁₀ ke heksadesimal
+1. 1780 ÷ 16 = 111, sisa 4  
+2. 111 ÷ 16 = 6, sisa 15 (F)  
+3. 6 ÷ 16 = 0, sisa 6  
+
+Hasil: **06F4₁₆**
+
+### b. 3666₁₀ ke heksadesimal
+1. 3666 ÷ 16 = 229, sisa 2  
+2. 229 ÷ 16 = 14, sisa 5  
+3. 14 ÷ 16 = 0, sisa 14 (E)  
+
+Hasil: **0E52₁₆**
+
+### c. 5230₁₀ ke heksadesimal
+1. 5230 ÷ 16 = 326, sisa 14 (E)  
+2. 326 ÷ 16 = 20, sisa 6  
+3. 20 ÷ 16 = 1, sisa 4  
+4. 1 ÷ 16 = 0, sisa 1  
+
+Hasil: **146E₁₆**
+
+### d. 6744₁₀ ke heksadesimal
+1. 6744 ÷ 16 = 421, sisa 8  
+2. 421 ÷ 16 = 26, sisa 5  
+3. 26 ÷ 16 = 1, sisa 10 (A)  
+4. 1 ÷ 16 = 0, sisa 1  
+
+Hasil: **1A58₁₆**
+
+---
+
+## 7. Konversi Heksadesimal ke Desimal
+
+Metode: Perkalian dengan pangkat 16
+
+### a. ABCD₁₆ ke desimal
+A = 10, B = 11, C = 12, D = 13  
+Perhitungan:  
+10×4096 + 11×256 + 12×16 + 13 = **43981₁₀**
+
+### b. 2170₁₆ ke desimal
+2×4096 + 1×256 + 7×16 + 0 = **8560₁₀**
+
+### c. B75F₁₆ ke desimal
+11×4096 + 7×256 + 5×16 + 15 = **46943₁₀**
+
+### d. EBED₁₆ ke desimal
+14×4096 + 11×256 + 14×16 + 13 = **60397₁₀**
+
+---
+
+## 8. Konversi Bilangan Pecahan Desimal ke Biner
+
+Metode: Perkalian dengan 2
+
+### a. 0,3125₁₀ ke biner
+1. 0,3125×2 = 0,625 → 0  
+2. 0,625×2 = 1,25 → 1  
+3. 0,25×2 = 0,5 → 0  
+4. 0,5×2 = 1,0 → 1  
+
+Hasil: **0,0101₂**
+
+### b. 0,65625₁₀ ke biner
+1. 0,65625×2 = 1,3125 → 1  
+2. 0,3125×2 = 0,625 → 0  
+3. 0,625×2 = 1,25 → 1  
+4. 0,25×2 = 0,5 → 0  
+5. 0,5×2 = 1,0 → 1  
+
+Hasil: **0,10101₂**
+
+### c. 0,34375₁₀ ke biner
+1. 0,34375×2 = 0,6875 → 0  
+2. 0,6875×2 = 1,375 → 1  
+3. 0,375×2 = 0,75 → 0  
+4. 0,75×2 = 1,5 → 1  
+5. 0,5×2 = 1,0 → 1  
+
+Hasil: **0,01011₂**
+
+### d. 0,140625₁₀ ke biner
+1. 0,140625×2 = 0,28125 → 0  
+2. 0,28125×2 = 0,5625 → 0  
+3. 0,5625×2 = 1,125 → 1  
+4. 0,125×2 = 0,25 → 0  
+5. 0,25×2 = 0,5 → 0  
+6. 0,5×2 = 1,0 → 1  
+
+Hasil: **0,001001₂**
+
+---
+
+## 9. Konversi Bilangan Desimal (dengan Pecahan) ke Biner
+
+### a. 11,625₁₀ ke biner
+Bagian integer: 11₁₀ = **1011₂**  
+Bagian pecahan (0,625):  
+- 0,625×2 = 1,25 → 1  
+- 0,25×2 = 0,5 → 0  
+- 0,5×2 = 1,0 → 1  
+
+Gabungan: **1011,101₂**
+
+### b. 0,6875₁₀ ke biner
+- 0,6875×2 = 1,375 → 1  
+- 0,375×2 = 0,75 → 0  
+- 0,75×2 = 1,5 → 1  
+- 0,5×2 = 1,0 → 1  
+
+Hasil: **0,1011₂**
+
+### c. 0,75₁₀ ke biner
+- 0,75×2 = 1,5 → 1  
+- 0,5×2 = 1,0 → 1  
+
+Hasil: **0,11₂**
+
+### d. 25,75₁₀ ke biner
+Bagian integer: 25₁₀ = **11001₂**  
+Bagian pecahan: 0,75 = **0,11₂**  
+Gabungan: **11001,11₂**
+
+---
+
+## 10. Konversi Bilangan Desimal (dengan Pecahan) ke Heksadesimal
+
+### a. 348,654₁₀ ke heksadesimal
+Bagian integer (348₁₀):
+- 348 ÷ 16 = 21, sisa 12 (C)  
+- 21 ÷ 16 = 1, sisa 5  
+- 1 ÷ 16 = 0, sisa 1  
+Hasil: **15C₁₆**
+
+Bagian pecahan (0,654):
+- 0,654×16 ≈ 10,464 → 10 (A)  
+- Selanjutnya menghasilkan ≈ 7 dan ≈ 8  
+Gabungan pecahan: **A78**  
+
+Hasil: **15C,A78₁₆**
+
+### b. 1784,240₁₀ ke heksadesimal
+Bagian integer (1784₁₀):
+- 1784 ÷ 16 = 111, sisa 8  
+- 111 ÷ 16 = 6, sisa 15 (F)  
+- 6 ÷ 16 = 0, sisa 6  
+Hasil: **6F8₁₆**
+
+Bagian pecahan (0,240):
+- 0,240×16 = 3,84 → 3  
+- 0,84×16 = 13,44 → 13 (D)  
+
+Hasil: **6F8,3D5₁₆**
+
+---
+
+## 11. Konversi ke Desimal (Bilangan dengan Pecahan)
+
+### a. 010100011,001111101₂ ke desimal
+Bagian integer (10100011₂):
+- 1×2⁷ + 1×2⁵ + 1×2¹ + 1×2⁰ = 128 + 32 + 2 + 1 = **163₁₀**
+
+Bagian pecahan (001111101₂):
+- Jumlah perkalian pecahan ≈ 0.24414, dibulatkan menjadi **0.245**  
+
+Hasil: **163,245₁₀**
+
+### b. 654,276₈ ke desimal
+Bagian integer (654₈):
+- 6×64 + 5×8 + 4 = 384 + 40 + 4 = **428₁₀**
+
+Bagian pecahan (276₈):
+- 2/8 + 7/64 + 6/512 ≈ 0.3711, dibulatkan menjadi **0.371**  
+
+Hasil: **428,371₁₀**
+
+### c. 4C5,2B8₁₆ ke desimal
+Bagian integer (4C5₁₆):
+- 4×256 + 12×16 + 5 = 1024 + 192 + 5 = **1221₁₀**
+
+Bagian pecahan (2B8₁₆):
+- 2/16 + 11/256 + 8/4096 ≈ 0.1699  
+
+Hasil: **1221,1699₁₀**
+
+---
+
+## 12. Konversi Bilangan Biner ke Bentuk BCD
+
+Konversi bilangan biner ke desimal, lalu tiap digit dikonversi ke BCD (4-bit).
+
+### a. 10100110000111₂ ke BCD
+2987₁₀ →  
+2: 0010  
+9: 1001  
+8: 1000  
+7: 0111  
+
+Hasil: **0010 1001 1000 0111**
+
+### b. 1010101100011₂ ke BCD
+1563₁₀ →  
+1: 0001  
+5: 0101  
+6: 0110  
+3: 0011  
+
+Hasil: **0001 0101 0110 0011**
+
+---
+
+## 13. Konversi Bentuk BCD ke Bilangan Biner
+
+Gabungkan kelompok 4-bit.
+
+### a. 1987 (BCD) ke biner
+- 1: 0001  
+- 9: 1001  
+- 8: 1000  
+- 7: 0111  
+
+Hasil: **110011000111**
+
+### b. 2346 (BCD) ke biner
+- 2: 0010  
+- 3: 0011  
+- 4: 0100  
+- 6: 0110  
+
+Hasil: **10001101000110**
+
+### c. 501 (BCD) ke biner
+- 5: 0101  
+- 0: 0000  
+- 1: 0001  
+
+Hasil: **1010000001**
+
+---
+
+## 14. Konversi Bilangan Biner ke Bentuk BCO (Biner Code Oktal)
+
+Kelompokkan tiap 3 digit dari kanan.
+
+### a. 11111101001₂ ke BCO
+Hasil: **3751₈**
+
+### b. 101110010100₂ ke BCO
+Hasil: **5624₈**
+
+### c. 1100000010₂ ke BCO
+Kelompok: 001 | 100 | 000 | 010  
+Hasil: **1402₈**
+
+---
+
+## 15. Konversi Bilangan Biner ke Bentuk BCH (Biner Code Heksadesimal)
+
+Kelompokkan tiap 4 digit dari kanan.
+
+### a. 1101111100101110₂ ke BCH
+Kelompok: 1101 | 1111 | 0010 | 1110  
+Hasil: **CF2E₁₆**
+
+### b. 110100110000001₂ ke BCH
+Kelompok: 0110 | 1001 | 1000 | 0001  
+Hasil: **6981₁₆**
+
+---
+
+## 16. Konversi Bentuk BCH ke Bilangan Heksadesimal
+
+### a. F0DE ke heksadesimal  
+Hasil: **F0DE₁₆**
+
+### b. 1CAB ke heksadesimal  
+Hasil: **1CAB₁₆**
+
+### c. 834 ke heksadesimal  
+Hasil: **834₁₆**
+
+---
+
+## 17. Positif atau Negatif Bilangan Biner (8-bit)
+
+### a. 01111111₂  
+Positif, nilai = **127₁₀**
+
+### b. 10000000₂  
+Negatif, nilai = **-128₁₀**
+
+### c. 01111011₂  
+Positif, nilai = **123₁₀**
+
+---
+
+## 18. Konversi Bilangan Biner Negatif ke Desimal (Komplemen 2)
+
+### a. 10001000₂
+Inversi: 01110111 → Tambah 1: 01111000 = 120  
+Hasil: **-120₁₀**
+
+### b. 11110111₂
+Inversi: 00001000 → Tambah 1: 00001001 = 9  
+Hasil: **-9₁₀**
+
+### c. 10000101₂
+Inversi: 01111010 → Tambah 1: 01111011 = 123  
+Hasil: **-123₁₀**
+
+### d. 10011100₂
+Inversi: 01100011 → Tambah 1: 01100100 = 100  
+Hasil: **-100₁₀**
+
+---
+
+## 19. Konversi ASCII Code ke Karakter
+
+### a. 41₁₆ → A  
+### b. 5A₁₆ → Z  
+### c. 24₁₆ → $  
+### d. 77₁₆ → W
+
+---
+
+## 20. Konversi Karakter ke ASCII Code
+
+### a. a → 61₁₆  
+### b. x → 78₁₆  
+### c. m → 6D₁₆  
+### d. H → 57₁₆
+
+---
+
+## 21. Tampilan Keyboard Standard ASCII
+
+Perintah: `PRINT X`
+
+Karakter (8-bit biner):
+- P: 1010000₂  
+- R: 1010010₂  
+- I: 1001001₂  
+- N: 1001110₂  
+- T: 1010100₂  
+- (spasi): 0100000₂  
+- X: 1011000₂
